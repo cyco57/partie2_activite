@@ -442,24 +442,3 @@ section {
     transform: scale(1.15);
     cursor:pointer;
 }
-
-/* nav img {
- 	width:70%;
- 	display:block;
- 	margin: auto;
-    -moz-transition-duration:2s;
-    -moz-transition-timing-function:linear;
-    -webkit-transition-duration:2s;
-    -webkit-transition-timing-function:linear;
-    transition-duration:2s;
-    transition-timing-function:linear;
-}
-
-nav img:hover {
-    -moz-transform:rotate(720deg);
-    -webkit-transform:rotate(720deg);
-    transform:rotate(720deg);
-}
-
-https://developer.mozilla.org/fr/docs/Web/CSS/overflow
-*/
