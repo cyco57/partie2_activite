@@ -1,0 +1,465 @@
+html,body {
+    font-family: verdana, sans-serif;
+    margin: 0px;
+    background-color: black;
+    color:white;
+    height: 100%;
+ }
+
+[type="search"] {
+   -webkit-appearance: textfield;
+   -webkit-box-sizing: content-box;
+}
+
+#recherche input {
+    border-radius: 15px;
+    border:none;
+    background-color: black;
+    color:white;
+    width:auto;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+a.mobile {
+    display:none;
+}
+
+label {
+    color:white;
+}
+
+header {
+	background: url(../img/vinyle_bandeau01.jpg) no-repeat;
+	background-size: cover;
+	color:white;
+	padding: 10px 0em 0em 0em;
+	text-align: center;
+	width: 100%;
+}
+
+header h1 {
+	font-family: 'Orbitron', sans-serif;
+	margin: 0px auto 10px auto;
+	font-size: 350%;
+	text-shadow: 2px 2px #000000;
+}
+
+header h2 {
+	font-family: 'Orbitron', sans-serif;
+	text-shadow: 2px 2px #000000;
+	font-style: italic;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+nav {
+    width: 150px;
+    position: absolute;
+    left:0px;
+    color: #999;
+    padding:1em 1em 1em 0em;
+}
+
+section {
+    width:auto;
+    position: absolute;
+    right:0px;
+    left:150px;
+    color: black;
+    padding: 1em 1em 0em 1em;
+    height: 100%;
+    background-color: black;
+    border-left: 1px dashed rgb(90,65,10);
+ }
+
+
+.navigation {
+    color : #999;
+    align-self: center;
+    text-align: center;
+    padding: 0px auto auto auto;
+    }
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.produits {
+    margin-top: 10px;
+    color:white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texte_large {
+    font-size: 110%;
+    color:white;
+    width: 100%;
+    color:white;
+}
+
+.texte_large img {
+    display:block;
+    margin: auto;
+    float:right;
+    width:20%;
+}
+
+.reference {
+    border-radius:30px;
+    padding: 15px;
+    width: 290px;
+    margin: 15px;
+    background-color: #202020;
+    transition: all 0.2s ease-out;
+}
+
+.reference img {
+    width: 170px;
+}
+
+.reference td {
+    text-align: left;
+    font-size: 90%;
+    vertical-align: top;
+}
+
+.reference p {
+    margin: 2px auto 2px auto;
+}
+
+.reference:hover {
+    background-color: rgb(90,65,10); 
+    transform: scale(1.1);
+}
+
+.reference ul {
+    list-style: none;
+    margin: auto auto auto 0px;
+    padding: 5px;
+}
+
+
+
+/* Principal */
+#menu{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: -moz-linear-gradient(rgba(120,80,20,0.8) 0%,  rgba(30,10,2,0.8)) 100%;
+        background: -webkit-linear-gradient(rgba(120,80,20,0.8) 0%,  rgba(30,10,2,0.8)) 100%;
+        background: -o-linear-gradient(rgba(120,80,20,0.8) 0%,  rgba(30,10,2,0.8)) 100%;
+        background: -ms-linear-gradient(rgba(120,80,20,0.8) 0%,  rgba(30,10,2,0.8)) 100%;
+        background: linear-gradient(rgba(120,80,20,0.8) 0%,  rgba(30,10,2,0.8)) 100%;
+}
+
+#menu li{
+        float: left;
+        padding: 5px 0 5px 0;
+        position: relative;
+}
+
+#menu a{
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        color: #999;
+        text-decoration: none;
+        font-family: 'Orbitron', sans-serif;
+        text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+        color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+        color: #fafafa;
+}
+
+#menu li:hover > ul{
+        display: block;
+}
+
+/* Sous-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a {
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */
+        height: 10px;
+        width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */
+        height: 10px;
+        width: 150px;
+}
+
+#menu ul a:hover{
+        background: #1E0A02;
+        background: -moz-linear-gradient(#785014,  #1E0A02);
+        background: -webkit-gradient(linear, left top, left bottom, from(#785014), to(#1E0A02));
+        background: -webkit-linear-gradient(#785014,  #1E0A02);
+        background: -o-linear-gradient(#785014,  #1E0A02);
+        background: -ms-linear-gradient(#785014,  #1E0A02);
+        background: linear-gradient(#785014,  #1E0A02);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #785014;
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Rétablissement du flottement */
+#menu:after{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+
+#slideshow {
+    position: relative;
+	width: 116px;
+	height:118px;
+	overflow: hidden;
+	margin:18px auto;
+	transition: all 0.5s ease-out;
+}
+
+#sContent {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;            
+	padding: 0;
+	width:100%;
+	
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+ #slideshow img {
+ 	height:116px;
+ 	margin: 0px auto 0px auto;
+ 	padding:0px;
+ }
+
+ @keyframes AutoSlide {
+	0%, 7.2%, 100% {
+		top: 0px; /*1ère image*/
+	}
+	13%, 18.8% {
+		top: -120px; /*2ème image*/
+	}
+	24.6%, 30.4% {
+		top: -240px; /*3ème image*/
+	}
+	36.2%, 42% {
+		top: -360px; /*4ème image*/
+	}
+	47.8%, 53.6% {
+		top: -480px; /*5ème image*/
+	}
+	59.4%, 65.2% {
+		top: -600px; /*6ème image*/
+	}
+	71%, 76.8% {
+		top: -720px; /*7ème image*/
+	}
+	82.6%, 88.4% {
+		top: -840px; /*8ème image*/
+	}
+}
+
+#slideshow:hover {
+	transform: scale(3) translate(40px, 39px) rotate(360deg);
+	z-index: 2;
+}
+
+#social1, #social2, #social3 {
+	color: rgb(90,65,10);
+	transition: all 0.5s ease-out;
+	position:relative;
+	margin:auto auto auto 25px;
+	z-index: 1;
+}
+
+#soc1, #soc2, #soc3 {
+	transition: all 0.5s ease-out;
+}
+
+#social1:hover {
+	transform: rotate(360deg);
+	color: white;
+    cursor:pointer;
+}
+
+#social2:hover {
+	transform: rotate(360deg);
+	color: white;
+    cursor:pointer;
+}
+
+#social3:hover {
+	transform: rotate(360deg);
+	color: white;
+    cursor:pointer;
+}
+
+#social1:hover #soc1 {
+	color:rgb(90,65,10);
+    cursor:pointer;
+}
+#social2:hover #soc2 {
+	color:rgb(90,65,10);
+    cursor:pointer;
+}
+#social3:hover #soc3 {
+	color:rgb(90,65,10);
+    cursor:pointer;
+}
+
+#indicateur {
+    width: 2.5em;
+ }
+
+.formulaire input {
+    border-radius: 10px;
+    font-size: 110%;
+    border-style: none;
+    background-color: #303030;
+    color:white;
+}
+
+.formulaire textarea {
+    border-radius: 10px;
+    font-size: 100%;
+    border-style: none;
+    background-color: #303030;
+    color:white;
+}
+
+#submit, #reset {
+    padding:10px 15px 10px 15px;
+    background-color: #303030;
+    color:white;
+    font-size: 120%;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.formulaire th {
+    padding-right: 30px;
+    text-align: left;
+}
+
+#submit:hover, #reset:hover {
+    background-color: rgb(90,65,10); 
+    transform: scale(1.15);
+    cursor:pointer;
+}
+
+/* nav img {
+ 	width:70%;
+ 	display:block;
+ 	margin: auto;
+    -moz-transition-duration:2s;
+    -moz-transition-timing-function:linear;
+    -webkit-transition-duration:2s;
+    -webkit-transition-timing-function:linear;
+    transition-duration:2s;
+    transition-timing-function:linear;
+}
+
+nav img:hover {
+    -moz-transform:rotate(720deg);
+    -webkit-transform:rotate(720deg);
+    transform:rotate(720deg);
+}
+
+https://developer.mozilla.org/fr/docs/Web/CSS/overflow
+*/
